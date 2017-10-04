@@ -12,10 +12,15 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "prepare": "npm link bs-platform"
+    "prepare": "npm link bs-platform",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "bs-jest": "^0.1.0",
-    "reason-react": "^0.2.4"
+    "reason-react": "^0.2.4",
+    "@storybook/react": "^3.2.12",
+    "@storybook/addon-actions": "^3.2.12",
+    "@storybook/addon-links": "^3.2.12"
   }
 }
