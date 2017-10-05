@@ -19,3 +19,13 @@ let make ::message _children => {
       </p>
     </div>
 };
+
+let jsComponent =
+ReasonReact.wrapReasonForJs
+  ::component
+  (
+    fun jsProps =>
+      make
+        message::jsProps##message
+        [||]
+  );

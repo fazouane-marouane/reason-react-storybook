@@ -17,10 +17,11 @@
     "build-storybook": "build-storybook"
   },
   "devDependencies": {
-    "bs-jest": "^0.1.0",
-    "reason-react": "^0.2.4",
-    "@storybook/react": "^3.2.12",
     "@storybook/addon-actions": "^3.2.12",
-    "@storybook/addon-links": "^3.2.12"
+    "@storybook/addon-knobs": "^3.2.12",
+    "@storybook/addon-links": "^3.2.12",
+    "@storybook/react": "^3.2.12",
+    "bs-jest": "^0.1.0",
+    "reason-react": "^0.2.4"
   }
 }
