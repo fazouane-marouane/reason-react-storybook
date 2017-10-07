@@ -14,6 +14,10 @@ storiesOf('Button', module)
   .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
   .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>);
 
-const appStories = storiesOf('App', module);
-appStories.addDecorator(withKnobs);
-appStories.add('run my app', () => <App message={text("message", "Hello there!")} />);
+storiesOf('App', module)
+  .add('main story', () => <div>Hello!</div>);
+
+storiesOf('App/First', module)
+  .addDecorator(withKnobs)
+  .add('run my app', () => <App message={text("message", "Hello there!")} />)
+  .add('run my app 2', () => <App message={text("message", "Yo!")} />);
